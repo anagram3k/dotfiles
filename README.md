@@ -1,3 +1,10 @@
+# Dotfiles repo
+
+Bare git repository for storing dotfiles.
+
+For details look in https://www.atlassian.com/git/tutorials/dotfiles
+
+
 # Initial setup
 ```
 echo ".cfg" >> .gitignore
