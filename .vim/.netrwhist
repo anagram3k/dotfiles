@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/luis/.vim/pack/plugins/opt/chezmoi.vim/autoload/chezmoi'
+let g:netrw_dirhist_4='/home/luis/.vim/pack/plugins/opt/chezmoi.vim/autoload'
+let g:netrw_dirhist_3='/home/luis/.vim/pack/plugins/opt/chezmoi.vim'
+let g:netrw_dirhist_2='/home/luis/.config/chezmoi'
+let g:netrw_dirhist_1='/home/luis/.local/share/kscreen/outputs'

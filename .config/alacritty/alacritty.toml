@@ -1,0 +1,7 @@
+window.columns = 160
+window.lines = 120
+
+window:
+  padding:
+    x: 20
+    y: 20
