@@ -2,7 +2,7 @@
 
 #systemd-resolve --status | grep "DNS Servers:"
 
-ping -c 1 -W 0.7 192.168.0.1 > /dev/null 2>&1
+ping -c 1 -W 0.7 192.168.2.1 > /dev/null 2>&1
 if [ $? -eq 0 ] ; then
     echo "Router Online"
 else

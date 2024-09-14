@@ -5,6 +5,21 @@ then
 fi
 export PATH
 
+export DIFFPROG=meld
+
+if   command -v nvim  1>/dev/null; then export EDITOR='nvim'
+elif command -v vim   1>/dev/null; then export EDITOR='vim'
+elif command -v vi    1>/dev/null; then export EDITOR='vi'
+elif command -v nano  1>/dev/null; then export EDITOR='nano'
+else echo 'Install a proper editor.'
+fi
+
+case "$EDITOR" in
+    nvim) export MANPAGER="nvim +'set ft=man' -" ;;
+    vim)  export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ro nomod nolist' -\"" ;;
+    *)    export MANPAGER='less' ;;
+esac
+
 # Environment variables for XDG
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
